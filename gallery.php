@@ -55,7 +55,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<li><a href="about.html">Quienes somos</a></li>
 				<li class="active"><a href="gallery.html">Producto</a></li>
 				<li><a href="contact.html">Cont√°ctenos</a></li>
-				<li><a href="./sistema/index.php">Ingresar</a></li>
+				<li><a href="/sistema/registroCompleto.php">Ingresar</a></li>
 				<li><a href="gallery.html#registroForm">Registrarse</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -403,11 +403,11 @@ Nuestro Sistema de Informaci√≥n le permite ingresar y controlar las labores agr√
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 slideanim">
-				<form action="sistema/index.php" method="post" onsubmit= "return validar()">
+				<form action="sistema/registroCompleto.php" method='POST'>
 					<div class="row">
 						<div class="form-group col-lg-4">
 							<label>Nombre</label>
-							<input type="text" id = "nombre" name="name" class="form-control" placeholder="" >
+							<input type="text" id = "nombre" name="nombre" class="form-control" placeholder="" >
 						</div>
 						<div class="form-group col-lg-4">
 							<label>Email</label>
@@ -427,7 +427,7 @@ Nuestro Sistema de Informaci√≥n le permite ingresar y controlar las labores agr√
 							<input type="password"  id = "clave" name="clave" class="form-control" placeholder="" >
 						</div>
 						<div class="form-group col-lg-12">
-							<button type="submit" class="btn btn-lg btn-outline">Ingresar</button>
+							<button type="submit" class="btn btn-lg btn-outline">Registrarse</button>
 						</div>
 
 					</div>

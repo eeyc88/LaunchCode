@@ -44,7 +44,7 @@ echo " 	   <th>Código</th>";
 echo "     <th>Periodo</th>"; 
 echo "     <th>Lote</th>"; 
 echo "     <th>Cultivo</th>";
-echo "     <th>Fecha</th>";
+//echo "     <th>Fecha</th>";
 echo "     <th>Estado</th>";
 echo "</tr>"; 
 echo "</thead>"; 
@@ -55,14 +55,14 @@ foreach ($CultivoLoteCollectorObj->showCultivoLotes() as $c){
 	echo "<td>".$c->getIdPeriodo()."</td>";
 	echo "<td>".$c->getIdLote()."</td>";
 	echo "<td>".$c->getIdCultivo()."</td>";
-	echo "<td>".$c->getFecha()."</td>"; 
+//	echo "<td>".$c->getFecha()."</td>"; 
  	if($c->getEstado()== '1'){
 		echo "<td>Activo</td>";
 	}else{
 		echo "<td>Inactivo</td>";
 	}
-	echo "<td><a href='updateCultivoLote.php?idcultivolote=".$c->getIdCultivoLote()."&idperiodo=".$c->getIdPeriodo()."&idlote=".$c->getIdLote()."&idcultivo=".$c->getIdCultivo()."&fecha=".$c->getFecha()."&estado=".$c->getEstado()."'>Editar</a></td>"; 
-	echo "<td><a href='deleteCultivoLote.php?idcultivolote=".$c->getIdCultivoLote()."&idperiodo=".$c->getIdPeriodo()."&idlote=".$c->getIdLote()."&idcultivo=".$c->getIdCultivo()."&fecha=".$c->getFecha()."&estado=".$c->getEstado()."'>Eliminar</a></td>"; 
+	echo "<td><a href='updateCultivoLote.php?idcultivolote=".$c->getIdCultivoLote()."&idperiodo=".$c->getIdPeriodo()."&idlote=".$c->getIdLote()."&idcultivo=".$c->getIdCultivo()."&estado=".$c->getEstado()."'>Editar</a></td>"; 
+	echo "<td><a href='deleteCultivoLote.php?idcultivolote=".$c->getIdCultivoLote()."&idperiodo=".$c->getIdPeriodo()."&idlote=".$c->getIdLote()."&idcultivo=".$c->getIdCultivo()."&estado=".$c->getEstado()."'>Eliminar</a></td>"; 
 	echo "</tr>"; 
 }
 echo "</tbody>";

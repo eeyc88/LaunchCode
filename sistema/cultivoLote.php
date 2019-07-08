@@ -6,15 +6,13 @@ class CultivoLote{
 	private $idPeriodo;
 	private $idLote;
 	private $idCultivo;
-	private $fecha;
 	private $estado;
 
-	function __construct($idCultivoLote, $idPeriodo, $idLote, $idCultivo, $fecha, $estado){
+	function __construct($idCultivoLote, $idPeriodo, $idLote, $idCultivo, $estado){
 		$this->idCultivoLote = $idCultivoLote ;
 		$this->idPeriodo = $idPeriodo ;
 		$this->idLote = $idLote ;
 		$this->idCultivo = $idCultivo ;
-		$this->fecha = $fecha ;
 		$this->estado = $estado ;
 	}
 
@@ -48,14 +46,6 @@ class CultivoLote{
 
         function getIdCultivo(){
                 return $this->idCultivo;
-        }
-
-	function setFecha($fecha){
-                $this->fecha = $fecha;
-        }
-
-        function getFecha(){
-                return $this->fecha;
         }
 
 	function setEstado($estado){

@@ -38,7 +38,6 @@ session_start();
 	$p =$_GET['idperiodo'];
 	$l =$_GET['idlote'];
 	$c =$_GET['idcultivo'];
-	$f =$_GET['fecha'];
 	$e =$_GET['estado'];
 
 ?>
@@ -68,12 +67,12 @@ session_start();
              <input name = "Cultivo" type="text" id= "Cultivo" class="form-control" placeholder="Cultivo" value="<?php echo $c;?>">
          </div>
      </div>
-     <div class="form-group">
+/*     <div class="form-group">
          <label for="inputEmail" class="control-label col-xs-2">Fecha:</label>
          <div class="col-xs-10">
              <input name = "Fecha" type="text" id= "Fecha" class="form-control" placeholder="Fecha" value="<?php echo $f;?>">
          </div>
-     </div>
+     </div>*/
      <div class="form-group">
          <label for="inputEmail" class="control-label col-xs-2">Estado:</label>
          <div class="col-xs-10">

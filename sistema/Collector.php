@@ -4,7 +4,7 @@ include_once('dataBase.php');
 // Define configuration
 define("DB_HOST", "localhost");
 define("DB_USER", "postgres");
-define("DB_PASS", "postgres");
+define("DB_PASS", "Erick88");
 define("DB_NAME", "controlAgricola");
 //define("DB_HOST", "ec2-54-243-185-132.compute-1.amazonaws.com");
 //define("DB_USER", "obihwaohfkvyyt");

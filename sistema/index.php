@@ -17,23 +17,30 @@ session_start();
 
 <?php
 
+/*$n = $_POST['usuario'];
+$p = $_POST['clave'];
+include_once("UsuarioCollector.php");
+$ObjUsuarioCollector = new UsuarioCollector();
+$objUsuarioCollector->insertUsuarios($n,$p);*/
+
+
+
  if (isset($_SESSION['Garcia'])){
  echo "<p> Hola Usuario: (" . $_SESSION['Garcia']. ")  [<a href = 'logout.php' >Cerrar Sesión</a>]";
 
 }
 else{
 echo "Por favor vuelva a logear la pagina <br/>";
-}
-?>
-			<form method="POST" name = "flogin" id = "flogin" action ="login.php" >
+}?>
+
+		<form method="POST" name = "flogin" id = "flogin" action ="validacion.php" >
 				<label>Nombre de Usuario:</label>
 				<input type="text" name="Nombre" id = "Nombre" class="form-control">
 				<label>Contraseña:</label>
 				<input type="password" name="password" id="password" class="form-control">
-                                <input type="submit" value="Conectarse" class="btn btn-success" />
+                           <input type="submit" value="Conectarse" class="btn btn-success" />
 				
-			</form>
+		</form>
 		</div>
-
 	</body>
 </html>

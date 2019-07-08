@@ -38,12 +38,11 @@ $i = $_POST['CultivoLote'];
 $p = $_POST['Periodo'];
 $l = $_POST['Lote'];
 $c = $_POST['Cultivo'];
-$f = $_POST['Fecha'];
 $e = $_POST['Estado'];
 
 include_once("cultivoLoteCollector.php");
 $CultivoLoteCollectorObj = new CultivoLoteCollector();
-$CultivoLoteCollectorObj->updateCultivoLote($i,$p,$l,$c,$f,$e);
+$CultivoLoteCollectorObj->updateCultivoLote($i,$p,$l,$c,$e);
 
 echo "<br>";
 

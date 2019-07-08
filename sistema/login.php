@@ -22,11 +22,18 @@ session_start();
 	echo "<nav class='navbar navbar-default'>";
 	  echo "<div class='container-fluid'>";
 	    echo "<div class='navbar-header'><a class='navbar-brand' >Control Agrícola</a></div>";
+		//Menu
 		echo " <ul class='nav navbar-nav'>";
 		      	echo "<li><a href='menu.php'>Menú</a></li>";
 		echo "</ul>";
+		//Mapa
+		echo " <ul class='nav navbar-nav'>";
+			echo "<li><a href='mapa.php'>Mapa</a></li>";
+		echo " </ul>";
+//
+
 		echo " <ul class='nav navbar-nav navbar-right'>";
-		$usuario = $_POST['Nombre'] ;
+		$usuario = $_POST['Nombre'];
 		$_SESSION['Garcia'] = $usuario;
 
 			echo "<li><a href='#'>Hola Usuario : (" . $_SESSION ['Garcia'] . ")</a></li>";

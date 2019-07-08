@@ -4,14 +4,12 @@ class Departamento
 {
     private $idDepartamento;
     private $nombre;
-    private $fecha;
     private $estado;
 
-     function __construct($idDepartamento, $nombre, $fecha,$estado) {
+     function __construct($idDepartamento, $nombre, $estado) {
        $this->idDepartamento = $idDepartamento;
        $this->nombre = $nombre;
        $this->estado = $estado;
-       $this->fecha = $fecha;
      }
     
      function setIdDepartamento($idDepartamento){
@@ -34,12 +32,6 @@ class Departamento
        return $this->estado;
      } 
 
-     function setFecha($fecha){
-       $this->fecha = $fecha;
-     } 
-     function getFecha(){
-       return $this->fecha;
-     } 
 }
 
 

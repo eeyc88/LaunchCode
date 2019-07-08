@@ -35,7 +35,6 @@ session_start();
 	$p =$_GET['idperiodo'];
 	$l =$_GET['idlote'];
 	$c =$_GET['idcultivo'];
-	$f =$_GET['fecha'];
 	$e =$_GET['estado'];
 
 	include_once("cultivoLoteCollector.php");

@@ -35,12 +35,12 @@ session_start();
 $p = $_POST['Periodo'];
 $l = $_POST['Lote'];
 $c = $_POST['Cultivo'];
-$f = $_POST['Fecha'];
+//$f = $_POST['Fecha'];
 $e = $_POST['Estado'];
 
 include_once("cultivoLoteCollector.php");
 $CultivoLoteCollectorObj = new CultivoLoteCollector();
-$CultivoLoteCollectorObj->insertCultivoLote($p,$l,$c,$f,$e);
+$CultivoLoteCollectorObj->insertCultivoLote($p,$l,$c,$e);
 
 echo "<br>";
 
@@ -48,7 +48,7 @@ echo "<div class='container'>";
 echo "  <h2>CultivoLotes</h2>";
 echo "  <div class='panel panel-default'>";
 echo "    <div class='panel-heading'>Registro Ingresado Correctamente</div>";
-echo "    <div class='panel-body'>$f</div>";
+echo "    <div class='panel-body'>Cultivo $c, Lote $l</div>";
 echo "  </div>";
 echo "</div>";
 
